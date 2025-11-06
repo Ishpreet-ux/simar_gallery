@@ -167,74 +167,90 @@ body {
 }
 
 .intro-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  display: flex;
+  gap: 24px;
   align-items: center;
-  margin-bottom: 80px;
-  padding: 40px;
-  background-color: white;
-  border-radius: 10px;
-  border: 2px solid var(--border-color);
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.intro-text {
+  flex: 1;
+  max-width: 600px;
 }
 
 .intro-text h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
 }
 
-.name-highlight {
-  font-style: italic;
-  color: var(--primary-color);
-}
-
-.intro-description {
-  font-size: 0.95rem;
-  line-height: 1.8;
+.intro-text p {
+  font-size: 1rem;
+  line-height: 1.6;
   color: var(--text-light);
-  margin-bottom: 20px;
-}
-
-.intro-cta {
-  font-size: 0.95rem;
-  line-height: 1.8;
-  color: var(--text-light);
+  margin-bottom: 1rem;
 }
 
 .intro-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  flex: 0 0 auto;
+  width: 300px;
 }
 
 .intro-image img {
   width: 100%;
-  max-width: 320px;
-  border-radius: 50%;
-  border: 4px solid var(--primary-color);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
 }
 
-.intro-image img:hover {
-  transform: scale(1.05);
+/* Mobile responsive fixes */
+@media (max-width: 768px) {
+  .intro-section {
+    flex-direction: column;
+    padding: 16px;
+    gap: 16px;
+  }
+
+  .intro-text {
+    max-width: 100%;
+  }
+
+  .intro-text h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .intro-text p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .intro-image {
+    width: 100%;
+    max-width: 240px;
+    margin: 0 auto;
+  }
 }
 
-.avatar-circle {
-  width: 250px;
-  height: 250px;
-  background-color: white;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-}
+@media (max-width: 480px) {
+  .intro-section {
+    padding: 12px;
+  }
 
-.avatar-circle svg {
-  width: 100%;
-  height: 100%;
+  .intro-text h1 {
+    font-size: 1.25rem;
+  }
+
+  .intro-text p {
+    font-size: 0.9rem;
+  }
+
+  .intro-image {
+    max-width: 180px;
+  }
 }
 
 /* Contact Section */
