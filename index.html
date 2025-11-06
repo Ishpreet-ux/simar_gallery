@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Portfolio - Architectural Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site-outline">
+    <!-- Landing Page -->
+    <div id="landing" class="landing-page">
+        <div class="landing-content">
+            <h1 class="landing-title">Digital</h1>
+            <h2 class="landing-subtitle">Portfolio</h2>
+            <p class="landing-description">Architectural Visualizer | Simarpreet kaur | 2025 - 2026</p>
+            <button class="explore-btn" onclick="navigateTo('home')">Explore</button>
+        </div>
+    </div>
+
+    <!-- Home Page -->
+    <div id="home" class="page hidden">
+        <nav class="navbar">
+            <div class="nav-container">
+                <button class="nav-back" onclick="navigateTo('landing')">← Back</button>
+                <div class="nav-links">
+                    <button class="nav-link active" onclick="navigateTo('home')">Home</button>
+                    <button class="nav-link" onclick="navigateTo('gallery')">Gallery</button>
+                </div>
+            </div>
+        </nav>
+
+        <main class="home-content">
+
+             <!-- ====== Intro Section ====== -->
+<section class="intro-section">
+  <div class="intro-text">
+    <h1>Hello, I’m <span>Simar</span></h1>
+    <p>
+      I’m an <strong>Architectural Visualizer</strong> with a passion for crafting 
+      <strong>3D models</strong>, <strong>photorealistic renders</strong>, and 
+      <strong>architectural animations</strong> that bring design concepts to life. 
+      Skilled in <em>3ds Max, V-Ray, SketchUp, Enscape, Maya,</em> and <em>Photoshop</em>, 
+      I blend technical precision with artistic vision to create compelling visual stories.
+    </p>
+    <p>
+      My work focuses on achieving the perfect balance between light, texture, and realism — 
+      ensuring every frame captures both the functionality and the feeling behind each space. 
+      I strive to transform ideas into immersive visual experiences that inspire and communicate effectively.
+    </p>
+    <p>
+      I invite you to explore my portfolio and discover the world I build through my visuals.  
+      For collaborations or commissions, feel free to get in touch — I’d love to connect!
+    </p>
+  </div>
+
+  <div class="intro-image">
+    <img src="images2k25/photo.jpeg" alt="Portrait of Simarpreet Kaur">
+  </div>
+</section>
+
+       
+            <!-- ====== Contact Section ====== -->
+              <section class="contact-section">
+          <h2>Contact</h2>
+          <div class="contact-grid">
+            <div class="contact-card">
+              <h3>Email</h3>
+              <p><a href="mailto:simarsasan1106@gmail.com">simarsasan1106@gmail.com</a></p>
+            </div>
+            <div class="contact-card">
+              <h3>Phone</h3>
+              <p>+91 9571212417</p>
+            </div>
+            <div class="contact-card">
+              <h3>Location</h3>
+              <p>Chandigarh, India</p>
+            </div>
+          </div>
+          <button class="gallery-btn" onclick="navigateTo('gallery')">View Gallery</button>
+        </section>
+
+  <!-- ====== Skills Section ====== -->
+<section class="skills-section">
+  <h2>Softwares</h2>
+      <div class="software-lists">
+        <div class="software-list">
+          <div class="software-item">
+            <div class="icon">3Ds</div>
+            <div>
+              <div class="software-name">3DS MAX</div>
+              <div class="bar">
+                <span class="active"></span>
+                <span class="active"></span>
+                <span class="active"></span>
+                <span class="active"></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+          <div class="software-item">
+            <div class="icon">Ps</div>
+            <div>
+              <div class="software-name">Adobe photoshop</div>
+              <div class="bar">
+                <span class="active"></span>
+                <span class="active"></span>
+                <span class="active"></span>
+                <span class="active"></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+          <div class="software-item">
+            <div class="icon">En</div>
+            <div>
+              <div class="software-name">Enscape</div>
+              <div class="bar">
+                <span class="active"></span>
+                <span class="active"></span>
+                <span class="active"></span>
+                <span class="active"></span>
+                <span class="active"></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="software-list">
+          <div class="software-item">
+            <div class="icon">Sk</div>
+            <div>
+              <div class="software-name">SketchUp</div>
+              <div class="bar">
+                <span class="active"></span>
+                <span class="active"></span>
+                <span class="active"></span>
+                <span class="active"></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+          <div class="software-item">
+            <div class="icon">M</div>
+            <div>
+              <div class="software-name">Maya</div>
+              <div class="bar">
+                <span class="active"></span>
+                <span class="active"></span>
+                <span class="active"></span>
+                <span class="active"></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+          <div class="software-item">
+            <div class="icon">Vr</div>
+            <div>
+              <div class="software-name">V.ray</div>
+              <div class="bar">
+                <span class="active"></span>
+                <span class="active"></span>
+                <span class="active"></span>
+                <span class="active"></span>
+                <span class="active"></span>
+              </div>
+            </div>
+          </div>
+      </div>
+</section>
+
+
+
+<!-- ====== Education & Certifications Section ====== -->
+<section class="education-section">
+  <h2>Education</h2>
+
+  <div class="education-column">
+    <h3>Bachelor of Commerce(B.Com)</h3>
+    <p>
+      <strong>Govt. Gauri Devi Girls College. Alwar</strong><br>
+      <span class="edu-year">2020 – 2022</span><br>
+    </p>
+    <h3>Diploma in 3D Visualization</h3>
+    <p>
+      <strong>Hi-Tech Animation | Delhi</strong><br>
+      <span class="edu-year">2023 – 2024</span><br>
+    </p>
+  </div>
+</section>
+
+<!-- ==coreskills section==>-->
+<div class="skills-pair">
+  <section class="soft-skills-section">
+  <h2>Soft Skills</h2>
+  <div class="soft-skills-grid">
+    <div class="soft-skill-item">Creativity</div>       
+    <div class="soft-skill-item">Attention to Detail</div>
+    <div class="soft-skill-item">Time Management</div>
+    <div class="soft-skill-item">Communication</div>
+    <div class="soft-skill-item">Adaptability</div>
+    <div class="soft-skill-item">Problem-Solving</div>
+    <div class="soft-skill-item">Collaboration</div>
+    <div class="soft-skill-item">Work Ethic</div>
+</section>
+<section class="core-skills-section">
+  <h2>Core Skills</h2>
+  <div class="core-skills-grid">
+    <div class="core-skill-item">3D Modeling</div>  
+    <div class="core-skill-item">Rendering & Texturing</div>
+    <div class="core-skill-item">Animation</div>
+    <div class="core-skill-item">Post-Processing & Lighting</div>
+    <div class="core-skill-item">Architectural Visualization</div>
+    <div class="core-skill-item">Interior & Exterior Visualization</div>
+    <div class="core-skill-item">Project Collaboration</div>
+    </div>
+</section>
+</div>
+
+            <button class="gallery-btn-bottom" onclick="navigateTo('gallery')">Gallery</button>
+        </main>
+    </div>
+
+    <!-- Gallery Page -->
+    <div id="gallery" class="page hidden">
+        <nav class="navbar">
+            <div class="nav-container">
+                <button class="nav-back" onclick="navigateTo('home')">← Back</button>
+                <div class="nav-links">
+                </div>
+            </div>
+        </nav>
+
+        <main class="gallery-content">
+            <h1 class="gallery-title">Gallery</h1>
+            <div class="gallery-grid">
+                <!-- Replace src values with your real images -->
+                <div class="gallery-item"><img src="images2k25/2.jpg" alt="Gallery image 1"></div>
+                <div class="gallery-item"><img src="images2k25/4.jpg" alt="Gallery image 2"></div>
+                <div class="gallery-item"><img src="images2k25/6.1.jpg" alt="Gallery image 3"></div>
+                <div class="gallery-item"><img src="images2k25/6.2.jpg" alt="Gallery image 4"></div>
+                <div class="gallery-item"><img src="images2k25/6.jpg" alt="Gallery image 5"></div>
+                <div class="gallery-item"><img src="images2k25/7.jpg" alt="Gallery image 6"></div>
+                <div class="gallery-item"><img src="images2k25/19.jpg" alt="Gallery image 7"></div>
+                <div class="gallery-item"><img src="images2k25/21.jpg" alt="Gallery image 8"></div>
+                <div class="gallery-item"><img src="images2k25/bakery2.jpeg" alt="Gallery image 9"></div>
+                <div class="gallery-item"><img src="images2k25/bedroom1.jpeg" alt="Gallery image 10"></div>
+                <div class="gallery-item"><img src="images2k25/bedroom2.jpeg" alt="Gallery image 11"></div>
+                <div class="gallery-item"><img src="images2k25/bedroom3.jpeg" alt="Gallery image 12"></div>
+                <div class="gallery-item"><img src="images2k25/cafe1.jpeg" alt="Gallery image 13"></div>
+                <div class="gallery-item"><img src="images2k25/D.jpg" alt="Gallery image 14"></div>
+                <div class="gallery-item"><img src="images2k25/draw2.jpeg" alt="Gallery image 15"></div>
+                <div class="gallery-item"><img src="images2k25/drawing.jpeg" alt="Gallery image 16"></div>
+                <div class="gallery-item"><img src="images2k25/E.jpg" alt="Gallery image 17"></div>
+                <div class="gallery-item"><img src="images2k25/exterior1.jpeg" alt="Gallery image 18"></div>
+                <div class="gallery-item"><img src="images2k25/interior1.jpeg" alt="Gallery image 19"></div>
+                <div class="gallery-item"><img src="images2k25/interior2.jpeg" alt="Gallery image 20"></div>
+               <div class="gallery-item"><img src="images2k25/interior4.jpeg" alt="Gallery image 21"></div>
+              <div class="gallery-item"><img src="images2k25/restro.jpeg" alt="Gallery image 22"></div>
+              <div class="gallery-item"><img src="images2k25/restro2.jpeg" alt="Gallery image 23"></div>
+               <div class="gallery-item"><img src="images2k25/restro3.jpeg" alt="Gallery image 24"></div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Fullscreen image modal -->
+    <div id="modal" class="image-modal" aria-hidden="true" role="dialog">
+      <button class="modal-close close" aria-label="Close image">&times;</button>
+      <img id="modal-img" src="" alt="Full view">
+    </div>
+  </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
